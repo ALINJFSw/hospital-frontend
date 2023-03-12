@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="../css/home.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="topnav">
+      <div>
+        <a class="active" href="#home">Home</a>
+        <a href="#medications">medications</a>
+        <a href="admin-page.html">admin</a>
+        <a href="#services">Sk-Service</a>
+      </div>
+      <div>
+        <button id="login" class="login-btn">Login</button>
+        <button id="register" class="login-btn">Register</button>
+        <a href="./pages/edit.html"
+          ><img
+            src="../images/profile_icon.png"
+            class="profile_icon"
+            id="profile"
+            alt=""
+        /></a>
+      </div>
+    </div>
+    <section id="services">
+      <label for="employee"><b>employee</b></label>
+      <input
+        type="text"
+        placeholder="Enter employee"
+        name="employee"
+        id="employee"
+        required
+      />
+
+      <label for="description"><b>description</b></label>
+      <textarea
+        type="text"
+        placeholder="Enter description"
+        name="description"
+        cols="30"
+        rows="4"
+        id="description"
+        required
+      ></textarea>
+      <button id="submit" class="login-btn" clas>ask</button>
+    </section>
     
-</body>
+    <section id="medications">
+        <h1>services</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>patient</th>
+              <th>employee</th>
+              <th>description</th>
+              <th>cost</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">   
+           
+          </tbody>
+        </table>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../src/work-pages.js"></script>
+    <script src="../src/home.js"></script>
+  </body>
 </html>
