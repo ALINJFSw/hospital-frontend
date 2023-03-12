@@ -1,0 +1,132 @@
+body{
+    background: #e9eefb;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    padding: 50px 150px;
+    display: flex;
+    justify-content: start;
+}
+
+.form {
+    width: 85%;
+    margin-top: 2rem;
+}
+
+.back-arrow {
+    width: 8%;
+    margin-right: 3rem;
+    
+}
+
+.back-arrow img {
+    width: 100%;
+    max-width: 2.5rem;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #BFACE2;
+    height: 1.4rem;
+    font-size: 1.2rem;
+}
+
+label{
+    margin-bottom: 1rem;
+}
+
+.long__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: start;
+    margin-top: 2rem;
+}
+
+.long__input input {
+    width: 100%;
+}
+
+
+.double__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+.haf__line__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    width: 40%;
+}
+
+.haf__line__input label {
+    text-align: start;
+    width: 100%;
+}
+.haf__line__input input {
+    width: 99%;
+}
+
+
+@media (max-width: 850px) {
+    .main {
+        padding: 30px 60px;
+    }
+    .double__input {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .haf__line__input{
+        margin-top: 2rem;
+        width: 80%;
+    }
+    .long__input {
+        width: 80%;
+    }
+}
+
+.buttons {
+    margin-top:  3rem;
+
+}
+
+.save,
+.cancel {
+  padding: 10px 30px;
+  background: #BFACE2;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.cancel {
+    background: #655dbb;
+    margin-left: 2rem;
+}
+
+.save:hover,
+.cancel:hover {
+  background: #e9eefb;
+  border: 1px solid #655dbb;
+}
+
+
+@media (max-width: 550px) {
+   
+    .haf__line__input {
+        width: 100%;
+    }
+    .long__input {
+        width: 100% !important;
+    }
+}
