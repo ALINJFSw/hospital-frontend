@@ -1,9 +1,4 @@
-const register = document.getElementById("register");
-const login = document.getElementById("login");
-register.addEventListener("click", () => {
-    console.log("test");
-    window.location.replace("./register.html")})
-login.addEventListener("click", () => {window.location.href = "login.html"})
+
 
 const submit = document.getElementById("submit");
 submit.addEventListener("click", async () => {
