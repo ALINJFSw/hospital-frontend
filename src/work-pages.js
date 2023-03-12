@@ -11,9 +11,7 @@ work_pages.getData = (apiURL) => {
 
 work_pages.postData = (apiURL, data, header) => {
   return axios
-    .post(apiURL, data, {
-      header,
-    })
+    .post(apiURL, data,header)
     .then((response) => response.data)
     .catch((error) => console.log(error));
 };

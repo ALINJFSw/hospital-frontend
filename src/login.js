@@ -6,6 +6,6 @@ submit.addEventListener("click", async () => {
   formData.append("email", email);
   formData.append("password",password);
   const response = await work_pages.postData("http://localhost//hospitals/backend/login_api.php",formData, {});
-    localStorage.setItem("token",response.token);
-    localStorage.setItem("type",response.user_type);
+  sessionStorage.setItem("token",response.token);
+  sessionStorage.setItem("type",response.user_type);
 });
